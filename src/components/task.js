@@ -7,8 +7,8 @@ export default function Task(props) {
     const addtask=()=>{
         if(newtask.trim!==''){
             setTasks([...tasks,{ id: Date.now(), text: newtask, completed: false }]);
+            setNewTask('')
         }
-        setNewTask('')
     }
     const updatetask=(taskId)=>{
         setTasks(tasks.map(task => 
