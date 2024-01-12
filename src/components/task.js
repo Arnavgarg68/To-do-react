@@ -5,7 +5,7 @@ export default function Task(props) {
     const [newtask,setNewTask]=useState('');
     const [tasks,setTasks]=useState([]);
     const addtask=()=>{
-        if(newtask.trim!==''){
+        if(newtask.trim()!==''){
             setTasks([...tasks,{ id: Date.now(), text: newtask, completed: false }]);
             setNewTask('')
         }
