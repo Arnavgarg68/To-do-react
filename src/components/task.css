@@ -45,9 +45,9 @@
     /* font-weight: bold; */
 }
 ul{
+    margin-top: 15vh;
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    flex-direction: column-reverse;
     align-items: center;
 }
 .taskitem{
@@ -57,7 +57,17 @@ ul{
     justify-content: space-between;
     min-width: 50vw;
     max-width: 70vw;
-    background-color: aqua;
-    margin: 4px;
+    background-color: white;
+    box-shadow: 0px 0px 3px inset;
+    border-radius: 10px;
+    margin: 7px;
     padding: 8px;
+}
+.taskitem button {
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    border:2px solid grey;
+    background-color:rgb(250, 203, 146);
+    cursor: pointer;
 }

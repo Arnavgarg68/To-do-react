@@ -8,7 +8,16 @@ export default function Task(props) {
         if(newtask.trim!==''){
             setTasks([...tasks,{ id: Date.now(), text: newtask, completed: false }]);
         }
+        setNewTask('')
     }
+    const updatetask=(taskId)=>{
+        setTasks(tasks.map(task => 
+            task.id === taskId ? { ...task, completed: !task.completed } : task
+          ));
+    }
+    const deleteTask = (taskId) => {
+        setTasks(tasks.filter(task => task.id !== taskId));
+      }
   return (<>
     <div className="newtask">
       <input type="text" value={newtask} onChange={(e)=>setNewTask(e.target.value)} placeholder='add new task ..'/>
@@ -19,8 +28,9 @@ export default function Task(props) {
         {tasks.map(task=>{
             return(
             <li key={task.id} className="taskitem">
-                <input type="checkbox" checked={task.completed} />
-                <span>{task.text}</span>
+                <input type="checkbox" checked={task.completed} onClick={() => updatetask(task.id)}/>
+                <span style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>{task.text}</span>
+                <button onClick={()=>deleteTask(task.id)}>Delete</button>
             </li>);
         })}
     </ul>
