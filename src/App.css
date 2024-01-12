@@ -64,7 +64,8 @@ body{
     /* font-weight: bold; */
 }
 ul{
-    margin-top: 15vh;
+    /* width:80vw; */
+    margin: 10vh auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -74,13 +75,20 @@ ul{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-width: 50vw;
-    max-width: 70vw;
+    width: 70vw;
+    /* max-width: 100vw; */
     background-color: white;
     box-shadow: 0px 0px 3px inset;
     border-radius: 10px;
     margin: 7px;
     padding: 8px;
+}
+.taskitem span{
+    margin: auto 10px;
+
+        white-space:nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 }
 .taskitem button {
     padding: 5px;
@@ -90,4 +98,34 @@ ul{
     background-color:rgb(250, 203, 146);
     cursor: pointer;
 }
+@media only screen and (max-width: 500px) {
+    body {
+      background-color: lightblue;
+    }
+    .newtask{
+        width: 100vw;
+    }
+    .newtask input{
+        width: 90%;
+    }
+    .newtask button{
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    ul{
+        margin: 5vh auto;
+        width: 100vw;
+    }
+    .taskitem{
+        width: 90vw;
+        
+    }
+    .taskitem span{
+        margin: auto 10px;
+        
+    }
+    .taskitem button{
+        font-size: 0.8rem;
+    }
+  }
 
