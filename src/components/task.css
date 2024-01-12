@@ -44,3 +44,20 @@
     background-color: whitesmoke;
     /* font-weight: bold; */
 }
+ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.taskitem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 50vw;
+    max-width: 70vw;
+    background-color: aqua;
+    margin: 4px;
+    padding: 8px;
+}
