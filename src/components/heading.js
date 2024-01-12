@@ -1,5 +1,4 @@
 import React  from 'react'
-import './heading.css'
 export default function Heading() {
   // const [quote, setQuote] = useState('');
   // const [mounted, setisMounted] = useState(true);

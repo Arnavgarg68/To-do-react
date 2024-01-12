@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './task.css'
+// import './task.css'
 // import Taskitem from './taskitem';
 export default function Task(props) {
     const [newtask,setNewTask]=useState('');

@@ -1,13 +1,17 @@
 
-import Heading from "./components/heading";
-import Task from "./components/task";
+import Heading from "./components/Heading.js";
+import Task from "./components/Task.js";
+import './App.css'
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
 function App() {
   return (
-    <div>
+    <Router>
       <Heading/>
       <Task/>
-    </div>
-    
+    </Router>
+
   )
 }
 

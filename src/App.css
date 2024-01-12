@@ -1,3 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+}
+.container{
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px black inset;
+}
+.container{
+    text-shadow: 0px 0px 5px grey;
+}
+
+/* Task . css starts from here */
+
 .newtask{
     /* background-color: aqua; */
     display: flex;
@@ -71,3 +90,4 @@ ul{
     background-color:rgb(250, 203, 146);
     cursor: pointer;
 }
+
